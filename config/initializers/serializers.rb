@@ -1,0 +1,2 @@
+puts 'Running serializers.rb.'
+ActiveModelSerializers.config.adapter = :json_api
