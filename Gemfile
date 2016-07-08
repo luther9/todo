@@ -21,6 +21,7 @@ gem 'bootstrap'
 gem 'figaro'
 gem 'pry'
 gem 'active_model_serializers'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'

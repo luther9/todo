@@ -1,4 +1,4 @@
-user = User.create! name: 'Regular User', password: 'qwertyui'
+user = User.create! name: 'regularuser', password: 'qwertyui'
 list = List.create! user: user, title: 'Before Wednesday'
 item = Item.create! list: list, body: 'Become President'
 
