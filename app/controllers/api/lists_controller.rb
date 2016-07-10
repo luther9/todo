@@ -10,6 +10,17 @@ class Api::ListsController < ApiController
     end
   end
 
+  def destroy
+    begin
+      list = List.find params[:id]
+    rescue ActiveRecord::RecordNotFound
+      render json: {}, status: :not_found
+      return
+    end
+    list.destroy
+    render json: {}, status: :no_content
+  end
+
   private
 
   def list_params
