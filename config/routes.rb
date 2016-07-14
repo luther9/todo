@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     }
 
     resources(:lists, only: []) {
-      resources :items, only: [:create]
+      resources :items, only: [:create, :update]
     }
 
     resources :items, only: [:destroy]
