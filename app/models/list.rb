@@ -4,4 +4,7 @@ class List < ActiveRecord::Base
   has_many :items, dependent: :destroy
 
   validates :title, presence: true
+  validates :permission, presence: true
+
+  enum permission: [:private_, :viewable, :open]
 end
